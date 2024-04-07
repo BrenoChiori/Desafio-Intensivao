@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    font-family: "Mulish", sans-serif;
+    font-size: 62.5%;
+    background-color: #F9F4FB;
+}
+
+#app {
+    display: grid;
+    grid-template-rows: max-content;
+}
+
+.container{
+    margin: 0 3.2rem 0;
+}
+
+#img-astronalta {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 1.7rem;
+}
+
+#header-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-title h1{
+    color: #B52184;
+    font-size: 3.2rem;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+}
+
+#header-title p {
+    color: #312D64;
+    font-size: 2.0rem;
+    font-weight: 600;
+    margin-bottom: 3.5rem;
+}
+
+#header-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 9.3rem;
+}
+
+#main-cards {
+    padding: 5.3rem 3.2rem 5.3rem;
+    background-color: #312D64;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card{
+    background-color: #FFFFFF;
+    padding: 2.7rem;
+    margin-bottom: 5.0rem;
+    border-radius: 2.0rem;
+    width: 34.0rem;
+    height: 35.2rem;
+}
+
+.card div img {
+    height: 8.0rem;
+    width: 8.0rem;
+    margin-bottom: 3.3rem;
+}
+
+.card div h1 {
+    color: #B52184;
+    font-size: 2.9rem;
+    font-weight: 900;
+    margin-bottom: 0.9rem;
+}
+
+.card div p {
+    color: #312D64;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+#main-form h1{
+    margin-top: 7.8rem;
+    color: #B52184;
+    font-size: 3.2rem;
+    font-weight: 900;
+    margin-bottom: 4.2rem;
+}
+
+.edit-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-form label {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.edit-form #name {
+    margin-bottom: 2.4rem;
+    border: 0.2rem solid #312D64;
+    height: 4.8rem;
+    border-radius: 1.8rem;
+    padding: 1.2rem 1.4rem;
+    background-image: url(/assets/person-form.png);
+    background-repeat: no-repeat;
+    background-position: calc(10px) center;
+    padding-right: 30px;
+    color: #312D64;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.edit-form #email {
+    margin-bottom: 2.4rem;
+    border: 0.2rem solid #312D64;
+    height: 4.8rem;
+    border-radius: 1.8rem;
+    padding: 1.2rem 1.4rem;
+    background-image: url(/assets/email-form.png);
+    background-repeat: no-repeat;
+    background-position: calc(10px) center;
+    padding-right: 30px;
+    color: #312D64;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+div textarea {
+    width: 100%;
+}
+
+textarea {
+    margin-bottom: 2.4rem;
+    border: 0.2rem solid #312D64;
+    border-radius: 1.8rem;
+    padding: 1.2rem 1.4rem;
+    color: #312D64;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+button {
+    height: 4.5rem;
+    background-color: #312D64;
+    color: #FFFFFF;
+    padding: 1.1rem 1.6rem;
+    border-radius: 1.6rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 7.5rem;
+}
+
+#stars {
+    display: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #312D64;
+    height: 7.8rem;
+}
+
+footer p {
+    color: #FFFFFF;
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+
+@media (min-width: 1000px) {
+    #app {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container{
+        margin: 0 10.9rem 0;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        height: 100%;
+    }
+
+    #header-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    #header-title h1{
+        font-size: 5.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    #header-title p{
+        font-size: 3.2rem;
+        
+    }
+
+    #header-button {
+        margin-top: 18.0rem;
+    }
+
+    #img-astronalta{
+        height: 73.0rem;
+        width: auto;        
+    }
+    
+    #main-cards{
+        margin-top: 10.3rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 6.0rem;
+    }
+
+    #final-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+        gap: 9.2rem
+    }
+
+    #main-form {
+        margin-left: 10.9rem;
+        width: 50%;
+    }
+
+    #stars {
+        display: initial;
+    }
+
+    #stars img {
+        height: 100%;
+    }
+
+}
